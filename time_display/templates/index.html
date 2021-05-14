@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Time Display</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <span>The current time and date is:</span>
+            </div>
+            <div id="content">
+                <span>{{time}}</span>
+            </div>
+        </div>
+        <!-- <script src="" async defer></script> -->
+    </body>
+</html>
