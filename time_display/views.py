@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from time import gmtime, strftime
+import datetime
     
 def index(request):
     context = {
@@ -9,7 +10,7 @@ def index(request):
 
 def time_display(request):
     context = {
-        "time": strftime("%Y-%m-%d %H:%M %p", gmtime())
+        "time": datetime.datetime.now()
     }
     return render(request,'index.html', context)
 
